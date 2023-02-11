@@ -145,7 +145,7 @@ ul {
     url(../images/people-office1.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
@@ -201,10 +201,13 @@ ul {
   color: var(--main-suptitle-color);
 }
 .flower-icon-box {
-  padding: 24px 100px;
+  height: 112px;
   background: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* -------------APPLE */
 .apple {
@@ -461,7 +464,10 @@ ul {
 .row-item {
   flex-basis: calc((100% - 48px) / 3);
 }
-.row-item:is(:hover, :focus) {
+.row-item {
+}
+.row-link:is(:hover, :focus){
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -472,7 +478,6 @@ ul {
   padding-left: 16px;
   border-top: none;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-
 }
 /* .row-one-item-title {
 }
